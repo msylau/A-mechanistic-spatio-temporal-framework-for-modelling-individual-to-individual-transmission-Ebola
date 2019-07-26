@@ -1,8 +1,5 @@
 
-
-
 ### functional form of the intensity (beta) as a function of t ###
-
 func_time_beta <- function(t, t_intervention, sum_beta, alpha, omega){
 
 	if (t>=t_intervention) beta_t <- (sum_beta+alpha)*exp(-1*(omega)*(t- t_intervention))
